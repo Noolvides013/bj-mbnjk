@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unión Europea</title>
+  <style>
+    :root {
+      --blue: #1d4ed8;
+      --gray-bg: #f9fafb;
+      --white: #ffffff;
+      --text: #111827;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--gray-bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--blue);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 0.95rem;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #1d4ed8, #3730a3);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    .hero img {
+      width: 100px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2, h3 {
+      color: var(--blue);
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.3rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .benefits-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .benefits-list li::before {
+      content: "✓";
+      color: green;
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    img.full {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Unión Europea</h1>
+    <nav>
+      <a href="#historia">Historia</a>
+      <a href="#paises">Países</a>
+      <a href="#instituciones">Instituciones</a>
+      <a href="#beneficios">Beneficios</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_the_European_Union.svg/1200px-Flag_of_the_European_Union.svg.png"  alt="Bandera UE"/>
+    <h2>Conoce la Unión Europea</h2>
+    <p>Una organización política y económica formada por 27 países europeos que colaboran para promover la paz, el desarrollo económico y el bienestar común.</p>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Historia -->
+    <section id="historia">
+      <h3>Origen e Historia</h3>
+      <div class="grid-2">
+        <div>
+          <p>La UE nació tras la Segunda Guerra Mundial con el objetivo de evitar más conflictos entre los países europeos. Sus primeras instituciones fueron:</p>
+          <ul>
+            <li><strong>1951:</strong> CECA – Comunidad Europea del Carbón y del Acero</li>
+            <li><strong>1957:</strong> CEE – Comunidad Económica Europea (Mercado Común)</li>
+            <li><strong>1993:</strong> UE – Tratado de Maastricht crea oficialmente la Unión Europea</li>
+          </ul>
+        </div>
+        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Tratado+de+Roma" alt="Tratado de Roma" class="full"/>
+      </div>
+    </section>
+
+    <!-- Países Miembros -->
+    <section id="paises">
+      <h3>Países Miembros</h3>
+      <div class="card-grid">
+        <div class="card">Alemania</div>
+        <div class="card">Francia</div>
+        <div class="card">España</div>
+        <div class="card">Italia</div>
+        <div class="card">Polonia</div>
+        <div class="card">Países Bajos</div>
+        <div class="card">Bélgica</div>
+        <div class="card">Grecia</div>
+        <div class="card">Portugal</div>
+        <div class="card">Suecia</div>
+        <div class="card">Finlandia</div>
+        <div class="card">Irlanda</div>
+        <div class="card">Chequia</div>
+        <div class="card">Hungría</div>
+        <div class="card">Austria</div>
+        <div class="card">Dinamarca</div>
+        <div class="card">Eslovaquia</div>
+        <div class="card">Bulgaria</div>
+        <div class="card">Croacia</div>
+        <div class="card">Rumanía</div>
+        <div class="card">Lituania</div>
+        <div class="card">Letonia</div>
+        <div class="card">Estonia</div>
+        <div class="card">Eslovenia</div>
+        <div class="card">Malta</div>
+        <div class="card">Chipre</div>
+        <div class="card">Luxemburgo</div>
+      </div>
+      <p class="italic mt-4">Reino Unido dejó la UE en 2020, en un proceso conocido como <strong>“Brexit”</strong>.</p>
+    </section>
+
+    <!-- Instituciones -->
+    <section id="instituciones">
+      <h3>Instituciones Clave</h3>
+      <div class="card-grid">
+        <div class="card"><strong>Parlamento Europeo</strong><br/>Representa a los ciudadanos europeos.</div>
+        <div class="card"><strong>Consejo Europeo</strong><br/>Jefes de Estado o gobierno de los países miembros.</div>
+        <div class="card"><strong>Comisión Europea</strong><br/>Órgano ejecutivo que propone leyes y gestiona políticas.</div>
+        <div class="card"><strong>Banco Central Europeo</strong><br/>Responsable de la política monetaria y del euro.</div>
+        <div class="card"><strong>Tribunal de Justicia</strong><br/>Garantiza el cumplimiento del derecho europeo.</div>
+        <div class="card"><strong>Corte de Cuentas Europea</strong><br/>Audita las finanzas de la UE.</div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios">
+      <h3>Beneficios para los Ciudadanos</h3>
+      <div class="grid-2">
+        <ul class="benefits-list text-lg">
+          <li>Viajar, estudiar y trabajar libremente en cualquier país de la UE</li>
+          <li>Acceso al sistema sanitario y educativo de otros países</li>
+          <li>Protección consular en el extranjero</li>
+          <li>Derechos laborales y sociales protegidos</li>
+        </ul>
+        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Ciudadanos+Europeos" alt="Ciudadanos europeos" class="full"/>
+      </div>
+    </section>
+
+    <!-- Valores y Futuro -->
+    <section>
+      <h3>Valores y Futuro</h3>
+      <div class="grid-2">
+        <div>
+          <p>La UE se basa en valores fundamentales como:</p>
+          <ul class="benefits-list">
+            <li>Libertad</li>
+            <li>Democracia</li>
+            <li>Derechos humanos</li>
+            <li>Estado de derecho</li>
+            <li>Igualdad</li>
+            <li>Pluralismo</li>
+          </ul>
+        </div>
+        <div>
+          <p>Entre sus desafíos futuros están:</p>
+          <ul class="benefits-list">
+            <li>Gestión de migraciones</li>
+            <li>Lucha contra el cambio climático</li>
+            <li>Ampliación a nuevos países candidatos</li>
+            <li>Fortalecer la cooperación internacional</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Unión Europea | Información Educativa</p>
+    <p class="mt-2">Página creada como parte de un proyecto escolar.</p>
+  </footer>
+
+</body>
+</html>
